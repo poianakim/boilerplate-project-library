@@ -1,15 +1,19 @@
 'use strict';
 
 const express     = require('express');
+const app = express();
+
 const bodyParser  = require('body-parser');
 const cors        = require('cors');
 require('dotenv').config();
+const helmet = require("helmet");
+app.use(helmet.hidePoweredBy({ setTo: "PHP 4.2.0" }));
+
 
 const apiRoutes         = require('./routes/api.js');
 const fccTestingRoutes  = require('./routes/fcctesting.js');
 const runner            = require('./test-runner');
 
-const app = express();
 
 app.use('/public', express.static(process.cwd() + '/public'));
 
@@ -38,7 +42,7 @@ app.use(function(req, res, next) {
 });
 
 //Start our server and tests!
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 3000 || '127.0.0.1:80', function () {
   console.log("Listening on port " + process.env.PORT);
   if(process.env.NODE_ENV==='test') {
     console.log('Running Tests...');
