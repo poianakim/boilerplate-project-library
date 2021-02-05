@@ -1,34 +1,76 @@
-.border {
-  border-style: solid;
-  border-width: 1px;
-  margin: 10px;
+h1 {
+    text-align: center;
 }
 
+h3 {
+    text-align: center;
+}
+
+#newBookForm {
+    align-items: center;
+}
+#bookTitleToAdd {
+    position: relative;
+    left:40px;
+}
+#bookWriterToAdd{
+    position: relative;
+    left: 67px;
+}
+#bookReadDate{
+    position: relative;
+    left: 27px;
+    width: 154px;
+}
+#newBookForm button{
+    margin-top: 20px;
+    position: relative;
+    left: 125px;
+}
+#newCommentForm{
+    margin: 0px;
+}
+#detailComments button {
+    padding: 7px;
+    margin-right: 10px;
+}
+#deleteAllBooks {
+    position: relative;
+    left: 135px;
+    padding: 7px;
+}
 #sampleui {
-  max-width: 450px;
-  margin-left: 5%;
-  height: 100%;
-}
-
-#sampleposting {
-  max-width: 450px;
-  text-align: center;
-  margin-left: 5%;
+    border: 2px solid darkgreen;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+    justify-items: center;
 }
 
 #userstories {
-  margin-left: 5%;
+    align-items: center;
+    font-family: monospace;
+    margin: 50px;
+    margin-top: 20px;
 }
 
-form {
-  padding: 5px;
+#userstories h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-label {
-  display: block;
-  font-weight: bold;
+.listWrapper {
+    list-style: none;
 }
 
-input {
-  margin-bottom: 5px;
+button {
+    border: none;
+    border-radius: 12px;
+}
+.btn {
+    padding: 0px;
+}
+
+#booktitle {
+    font-weight: bold;
+    margin-bottom: 0px;
 }

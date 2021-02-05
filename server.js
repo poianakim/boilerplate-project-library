@@ -27,6 +27,10 @@ app.route('/')
   .get(function (req, res) {
     res.sendFile(process.cwd() + '/views/index.html');
   });
+app.route('/apitest')
+  .get((req, res) => {
+    res.sendFile(process.cwd() + '/views/sampleAPI.html');
+  })
 
 //For FCC testing purposes
 fccTestingRoutes(app);

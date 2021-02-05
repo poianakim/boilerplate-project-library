@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Library</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <style>
+      code {
+        background-color: whitesmoke;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="row" id="sampleposting">
+      <h2 style="text-align: left">Test API responses</h2>
+      <div class="col-md-6">
+        <form action="/api/books" method="post" class="border">
+          <h4>Test post to /api/books</h4>
+          <label for="title">Book Info</label><br />
+          <input
+            type="text"
+            id="title"
+            name="title"
+            value=""
+            placeholder="Book Title"
+          /><br />
+          <input type="text" id="writer" name="writer" placeholder="Writer" />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="col-md-6">
+        <form action="" method="post" id="commentTest" class="border">
+          <h4>Test post to /api/books/{bookid}</h4>
+          <label for="idinputtest">BookId to comment on</label><br />
+          <input type="text" name="id" value="" id="idinputtest" /><br />
+          <label for="comment">Comment</label><br />
+          <textarea id="comment" name="comment" value="" cols="50"></textarea
+          ><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
