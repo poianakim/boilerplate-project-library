@@ -51,7 +51,7 @@ $(document).ready(function () {
         comments.push('<li>' + val + '</li>')
       })
       comments.push(
-        '<br><form id="newCommentForm"><input style="width:200px" type="text" class="form-control" id="commentToAdd" name="comment" placeholder="New Comment"></form>'
+        '<br><form id="newCommentForm"><textarea style="width:200px" type="text" class="form-control" id="commentToAdd" name="comment" placeholder="New Comment"></textarea></form>'
       )
       comments.push(
         '<br><button class="btn btn-outline-info addComment" id="' +
