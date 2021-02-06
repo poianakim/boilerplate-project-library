@@ -21,6 +21,19 @@
   <body>
     <div class="row" id="sampleposting">
       <h2 style="text-align: left">Test API responses</h2>
+      <a href="/">back to the index page</a>
+      <div id="user-stories" style="color: rgb(89, 89, 89)">
+        <h4>USER STORIES</h4>
+        <ul>
+          <li>you can post with POST /api/books with title and writer</li>
+          <li>
+            when you post book without title or writer, there will be an notice
+          </li>
+          <li>you can get data by id with GET /api/books/[id]</li>
+          <li>you can post new comment with POST /api/books/[id</li>
+          <li>you can delete book data with DELETE /api/books/[id]</li>
+        </ul>
+      </div>
       <div class="col-md-6">
         <form action="/api/books" method="post" class="border">
           <h4>Test post to /api/books</h4>
@@ -49,5 +62,11 @@
         </form>
       </div>
     </div>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
   </body>
 </html>
