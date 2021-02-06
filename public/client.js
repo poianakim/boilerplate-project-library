@@ -6,14 +6,13 @@ $(document).ready(function () {
     //let  items = [];
     itemsRaw = data
     $.each(data, function (i, val) {
+      if (val.title == undefined) {
+        val.title == 'Unknown Title'
+      }
+      if (val.writer == undefined) {
+        val.writer == 'Unknown Writer'
+      }
       items.push(
-        // '<li class="bookItem" id="' + i + '">' +
-        // '<p id="booktitle">' +
-        // Number(i + 1) + '. [' + val.title.toUpperCase() + '] by ' + val.writer +
-        // '</p>' +
-        // new Date(val.read_date).toDateString() + ".  " +
-        // val.commentcount + ' comments' +
-        // '</li>'
         '<li class="bookItem" id="' +
           i +
           '">' +
