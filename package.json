@@ -27,8 +27,8 @@
 	"keywords": [
 		"node",
 		"hyperdev",
-		"express"
+		"express",
+		"heroku"
 	],
-	"license": "MIT",
-	"homepage": "http://poianakim.github.io/boilerplate-project-library"
+	"license": "MIT"
 }
