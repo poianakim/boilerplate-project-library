@@ -1,4 +1,5 @@
 'use strict';
+var compression = require('compression');
 
 const express     = require('express');
 const app = express();
@@ -14,7 +15,7 @@ const apiRoutes         = require('./routes/api.js');
 const fccTestingRoutes  = require('./routes/fcctesting.js');
 const runner            = require('./test-runner');
 
-
+app.use(compression({ filter: shouldCompress }))
 app.use('/public', express.static(process.cwd() + '/public'));
 
 app.use(cors({origin: '*'})); //USED FOR FCC TESTING PURPOSES ONLY!
